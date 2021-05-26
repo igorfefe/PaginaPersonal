@@ -1,0 +1,13 @@
+/*Barra de navegacion*/
+.nav{
+    margin: 1%;
+}
+.nombre{
+    padding: 1%;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+.foto{
+    height: 60px;
+    width: 60px;
+}
