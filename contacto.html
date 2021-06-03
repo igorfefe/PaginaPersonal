@@ -5,41 +5,71 @@
 <title>Igor Fefelov</title>
 <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 <link rel="StyleSheet" href="styles/styles.css">
 </head>
 
 <body>
-        <header>
-                <!-- Navbar -->
-                <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-                  <div class="container-fluid">
-                      <img class="foto" src="images/logo.png" alt="logo">
-                    <div class="collapse navbar-collapse justify-content-end">
-                      <ul class="nav nav-pills">
-                        <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="/index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/sobreMi.html">Sobre mi</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link active" href="/contacto.html">Contacto</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
-                <!-- Navbar -->
-              
-                <!-- Jumbotron -->
-                <div class="p-5 text-center bg-light" style="margin-top: 58px;">
-                    <img src="images/nombre.png" alt="nombre">
-                    <h4 class="mb-3">Bienvenidos a mi página web</h4>
-                    <a class="btn btn-primary" href="" role="button">Call to action</a>
-                </div>
-                <!-- Jumbotron -->
-              </header>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <div class="container-fluid">
+        <img class="foto" src="images/logo.png" alt="logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/sobreMi.html">Sobre mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container contacto">
+    <form>   
+    <hr />
+      <!-- nombre  -->
+      <div class="form-group">
+        <label>Nombre/Apellidos:</label>
+        <div class="input">
+            <input type="text" class="form-control" placeholder="Nombre" required />               
+        </div>
+      </div>
+      <!-- telefono -->
+      <div class="form-group">
+        <label>Teléfono</label>
+        <div class="input">
+            <input type="text" class="form-control" placeholder="Teléfono" required />               
+        </div>
+      </div>
+      <!-- email -->
+      <div class="form-group">
+        <label>Email:</label>
+        <div class="input">
+          <input type="email" class="form-control" placeholder="su@email" required />               
+        </div>
+        <small id="emailHelp" class="form-text text-muted">Su email no será compartido con nadie.</small>
+      </div>
+      <!-- mensaje -->
+      <div class="form-group">
+        <label>Asunto:</label>
+        <textarea placeholder="Asunto" class="form-control" required></textarea>
+      </div>
+      <button type="button" class="btn btn-success mt-2">Enviar</button>
+    </form>
+  </div>
+
 </body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
 </html>
